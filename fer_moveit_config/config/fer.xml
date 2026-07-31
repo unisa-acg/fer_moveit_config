@@ -1,0 +1,389 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<root>
+ <tabbed_widget name="Main Window" parent="main_window">
+  <Tab tab_name="positions" containers="1">
+   <Container>
+    <DockSplitter count="1" sizes="1" orientation="-">
+     <DockSplitter count="3" sizes="0.333333;0.333333;0.333333" orientation="|">
+      <DockSplitter count="3" sizes="0.332925;0.334149;0.332925" orientation="-">
+       <DockArea name="joint 1 [°]">
+        <plot flip_y="false" style="Lines" flip_x="false" mode="TimeSeries">
+         <range right="16.138012" top="-12.876299" bottom="-12.877095" left="11.139000"/>
+         <limitY/>
+         <curve name="/franka_robot_state_broadcaster/measured_joint_states/fer_joint1/position" color="#1171be">
+          <transform name="Scale/Offset" alias="joint 1">
+           <options value_offset="0.0" time_offset="0.0" value_scale="57.296"/>
+          </transform>
+         </curve>
+        </plot>
+       </DockArea>
+       <DockArea name="joint 2 [°]">
+        <plot flip_y="false" style="Lines" flip_x="false" mode="TimeSeries">
+         <range right="16.138012" top="-43.896025" bottom="-43.897029" left="11.139000"/>
+         <limitY/>
+         <curve name="/franka_robot_state_broadcaster/measured_joint_states/fer_joint2/position" color="#dd5400">
+          <transform name="Scale/Offset" alias="joint 2">
+           <options value_offset="0.0" time_offset="0.0" value_scale="57.296"/>
+          </transform>
+         </curve>
+        </plot>
+       </DockArea>
+       <DockArea name="joint 3 [°]">
+        <plot flip_y="false" style="Lines" flip_x="false" mode="TimeSeries">
+         <range right="16.138012" top="8.633811" bottom="8.632542" left="11.139000"/>
+         <limitY/>
+         <curve name="/franka_robot_state_broadcaster/measured_joint_states/fer_joint3/position" color="#edb120">
+          <transform name="Scale/Offset" alias="joint 3">
+           <options value_offset="0.0" time_offset="0.0" value_scale="57.296"/>
+          </transform>
+         </curve>
+        </plot>
+       </DockArea>
+      </DockSplitter>
+      <DockSplitter count="3" sizes="0.332925;0.334149;0.332925" orientation="-">
+       <DockArea name="joint 4 [°]">
+        <plot flip_y="false" style="Lines" flip_x="false" mode="TimeSeries">
+         <range right="16.138012" top="-134.596940" bottom="-134.598093" left="11.139000"/>
+         <limitY/>
+         <curve name="/franka_robot_state_broadcaster/measured_joint_states/fer_joint4/position" color="#8516d1">
+          <transform name="Scale/Offset" alias="joint 4">
+           <options value_offset="0.0" time_offset="0.0" value_scale="57.296"/>
+          </transform>
+         </curve>
+        </plot>
+       </DockArea>
+       <DockArea name="joint 5 [°]">
+        <plot flip_y="false" style="Lines" flip_x="false" mode="TimeSeries">
+         <range right="16.138012" top="5.622204" bottom="5.621569" left="11.139000"/>
+         <limitY/>
+         <curve name="/franka_robot_state_broadcaster/measured_joint_states/fer_joint5/position" color="#3baa32">
+          <transform name="Scale/Offset" alias="joint 5">
+           <options value_offset="0.0" time_offset="0.0" value_scale="57.296"/>
+          </transform>
+         </curve>
+        </plot>
+       </DockArea>
+       <DockArea name="joint 6 [°]">
+        <plot flip_y="false" style="Lines" flip_x="false" mode="TimeSeries">
+         <range right="16.138012" top="92.428324" bottom="92.427718" left="11.139000"/>
+         <limitY/>
+         <curve name="/franka_robot_state_broadcaster/measured_joint_states/fer_joint6/position" color="#2fbeef">
+          <transform name="Scale/Offset" alias="joint 6">
+           <options value_offset="0.0" time_offset="0.0" value_scale="57.296"/>
+          </transform>
+         </curve>
+        </plot>
+       </DockArea>
+      </DockSplitter>
+      <DockSplitter count="3" sizes="0.332925;0.334149;0.332925" orientation="-">
+       <DockArea name="joint 7 [°]">
+        <plot flip_y="false" style="Lines" flip_x="false" mode="TimeSeries">
+         <range right="16.138012" top="37.481720" bottom="37.480529" left="11.139000"/>
+         <limitY/>
+         <curve name="/franka_robot_state_broadcaster/measured_joint_states/fer_joint7/position" color="#d1048b">
+          <transform name="Scale/Offset" alias="joint 7">
+           <options value_offset="0.0" time_offset="0.0" value_scale="57.296"/>
+          </transform>
+         </curve>
+        </plot>
+       </DockArea>
+       <DockArea name="left finger [m]">
+        <plot flip_y="false" style="Lines" flip_x="false" mode="TimeSeries">
+         <range right="16.138012" top="0.040178" bottom="0.040176" left="11.139000"/>
+         <limitY/>
+         <curve name="/fer_gripper/joint_states/fer_finger_joint1/position" color="#ffd60a"/>
+        </plot>
+       </DockArea>
+       <DockArea name="right finger [m]">
+        <plot flip_y="false" style="Lines" flip_x="false" mode="TimeSeries">
+         <range right="16.138012" top="0.040178" bottom="0.040176" left="11.139000"/>
+         <limitY/>
+         <curve name="/fer_gripper/joint_states/fer_finger_joint2/position" color="#6582fd"/>
+        </plot>
+       </DockArea>
+      </DockSplitter>
+     </DockSplitter>
+    </DockSplitter>
+   </Container>
+  </Tab>
+  <Tab tab_name="velocities" containers="1">
+   <Container>
+    <DockSplitter count="1" sizes="1" orientation="-">
+     <DockSplitter count="3" sizes="0.336957;0.336957;0.326087" orientation="|">
+      <DockSplitter count="3" sizes="0.35;0.35;0.3" orientation="-">
+       <DockArea name="joint 1 [°/s]">
+        <plot flip_y="false" style="Lines" flip_x="false" mode="TimeSeries">
+         <range right="16.138012" top="0.141915" bottom="-0.123267" left="11.139000"/>
+         <limitY/>
+         <curve name="/franka_robot_state_broadcaster/measured_joint_states/fer_joint1/velocity" color="#1171be">
+          <transform name="Scale/Offset" alias="joint 1">
+           <options value_offset="0.0" time_offset="0.0" value_scale="57.296"/>
+          </transform>
+         </curve>
+        </plot>
+       </DockArea>
+       <DockArea name="joint 2 [°/s]">
+        <plot flip_y="false" style="Lines" flip_x="false" mode="TimeSeries">
+         <range right="16.138012" top="0.387016" bottom="-0.189055" left="11.139000"/>
+         <limitY/>
+         <curve name="/franka_robot_state_broadcaster/measured_joint_states/fer_joint2/velocity" color="#dd5400">
+          <transform name="Scale/Offset" alias="joint 2">
+           <options value_offset="0.0" time_offset="0.0" value_scale="57.296"/>
+          </transform>
+         </curve>
+        </plot>
+       </DockArea>
+       <DockArea name="joint 3 [°/s]">
+        <plot flip_y="false" style="Lines" flip_x="false" mode="TimeSeries">
+         <range right="16.138012" top="0.186437" bottom="-0.239785" left="11.139000"/>
+         <limitY/>
+         <curve name="/franka_robot_state_broadcaster/measured_joint_states/fer_joint3/velocity" color="#edb120">
+          <transform name="Scale/Offset" alias="joint 3">
+           <options value_offset="0.0" time_offset="0.0" value_scale="57.296"/>
+          </transform>
+         </curve>
+        </plot>
+       </DockArea>
+      </DockSplitter>
+      <DockSplitter count="3" sizes="0.35;0.35;0.3" orientation="-">
+       <DockArea name="joint 4 [°/s]">
+        <plot flip_y="false" style="Lines" flip_x="false" mode="TimeSeries">
+         <range right="16.138012" top="0.194381" bottom="-0.212941" left="11.139000"/>
+         <limitY/>
+         <curve name="/franka_robot_state_broadcaster/measured_joint_states/fer_joint4/velocity" color="#8516d1">
+          <transform name="Scale/Offset" alias="joint 4">
+           <options value_offset="0.0" time_offset="0.0" value_scale="57.296"/>
+          </transform>
+         </curve>
+        </plot>
+       </DockArea>
+       <DockArea name="joint 5 [°/s]">
+        <plot flip_y="false" style="Lines" flip_x="false" mode="TimeSeries">
+         <range right="16.138012" top="0.098438" bottom="-0.542942" left="11.139000"/>
+         <limitY/>
+         <curve name="/franka_robot_state_broadcaster/measured_joint_states/fer_joint5/velocity" color="#3baa32">
+          <transform name="Scale/Offset" alias="joint 5">
+           <options value_offset="0.0" time_offset="0.0" value_scale="57.296"/>
+          </transform>
+         </curve>
+        </plot>
+       </DockArea>
+       <DockArea name="joint 6 [°/s]">
+        <plot flip_y="false" style="Lines" flip_x="false" mode="TimeSeries">
+         <range right="16.138012" top="0.074415" bottom="-0.077309" left="11.139000"/>
+         <limitY/>
+         <curve name="/franka_robot_state_broadcaster/measured_joint_states/fer_joint6/velocity" color="#2fbeef">
+          <transform name="Scale/Offset" alias="joint 6">
+           <options value_offset="0.0" time_offset="0.0" value_scale="57.296"/>
+          </transform>
+         </curve>
+        </plot>
+       </DockArea>
+      </DockSplitter>
+      <DockSplitter count="3" sizes="0.35;0.35;0.3" orientation="-">
+       <DockArea name="joint 7 [°/s]">
+        <plot flip_y="false" style="Lines" flip_x="false" mode="TimeSeries">
+         <range right="16.138012" top="0.559140" bottom="-0.595698" left="11.139000"/>
+         <limitY/>
+         <curve name="/franka_robot_state_broadcaster/measured_joint_states/fer_joint7/velocity" color="#d1048b">
+          <transform name="Scale/Offset" alias="joint 7">
+           <options value_offset="0.0" time_offset="0.0" value_scale="57.296"/>
+          </transform>
+         </curve>
+        </plot>
+       </DockArea>
+       <DockArea name="left finger [m/s]">
+        <plot flip_y="false" style="Lines" flip_x="false" mode="TimeSeries">
+         <range right="16.138012" top="0.100000" bottom="-0.100000" left="11.139000"/>
+         <limitY/>
+         <curve name="/fer_gripper/joint_states/fer_finger_joint1/velocity" color="#ffd60a"/>
+        </plot>
+       </DockArea>
+       <DockArea name="right finger [m/s]">
+        <plot flip_y="false" style="Lines" flip_x="false" mode="TimeSeries">
+         <range right="16.138012" top="0.100000" bottom="-0.100000" left="11.139000"/>
+         <limitY/>
+         <curve name="/fer_gripper/joint_states/fer_finger_joint2/velocity" color="#6582fd"/>
+        </plot>
+       </DockArea>
+      </DockSplitter>
+     </DockSplitter>
+    </DockSplitter>
+   </Container>
+  </Tab>
+  <Tab tab_name="efforts" containers="1">
+   <Container>
+    <DockSplitter count="1" sizes="1" orientation="-">
+     <DockSplitter count="3" sizes="0.333333;0.333333;0.333333" orientation="|">
+      <DockSplitter count="3" sizes="0.332925;0.334149;0.332925" orientation="-">
+       <DockArea name="joint 1 [Nm]">
+        <plot flip_y="false" style="Lines" flip_x="false" mode="TimeSeries">
+         <range right="16.138012" top="-0.113081" bottom="-0.296370" left="11.139000"/>
+         <limitY/>
+         <curve name="/franka_robot_state_broadcaster/measured_joint_states/fer_joint1/effort" color="#1171be">
+          <transform name="Scale/Offset" alias="joint 1">
+           <options value_offset="0.0" time_offset="0.0" value_scale="1"/>
+          </transform>
+         </curve>
+        </plot>
+       </DockArea>
+       <DockArea name="joint 2 [Nm]">
+        <plot flip_y="false" style="Lines" flip_x="false" mode="TimeSeries">
+         <range right="16.138012" top="-3.912399" bottom="-4.149841" left="11.139000"/>
+         <limitY/>
+         <curve name="/franka_robot_state_broadcaster/measured_joint_states/fer_joint2/effort" color="#dd5400">
+          <transform name="Scale/Offset" alias="joint 2">
+           <options value_offset="0.0" time_offset="0.0" value_scale="1"/>
+          </transform>
+         </curve>
+        </plot>
+       </DockArea>
+       <DockArea name="joint 3 [Nm]">
+        <plot flip_y="false" style="Lines" flip_x="false" mode="TimeSeries">
+         <range right="16.138012" top="-3.324018" bottom="-3.598951" left="11.139000"/>
+         <limitY/>
+         <curve name="/franka_robot_state_broadcaster/measured_joint_states/fer_joint3/effort" color="#edb120">
+          <transform name="Scale/Offset" alias="joint 3">
+           <options value_offset="0.0" time_offset="0.0" value_scale="1"/>
+          </transform>
+         </curve>
+        </plot>
+       </DockArea>
+      </DockSplitter>
+      <DockSplitter count="3" sizes="0.332925;0.334149;0.332925" orientation="-">
+       <DockArea name="joint 4 [Nm]">
+        <plot flip_y="false" style="Lines" flip_x="false" mode="TimeSeries">
+         <range right="16.138012" top="21.680349" bottom="21.442907" left="11.139000"/>
+         <limitY/>
+         <curve name="/franka_robot_state_broadcaster/measured_joint_states/fer_joint4/effort" color="#8516d1">
+          <transform name="Scale/Offset" alias="joint 4">
+           <options value_offset="0.0" time_offset="0.0" value_scale="1"/>
+          </transform>
+         </curve>
+        </plot>
+       </DockArea>
+       <DockArea name="joint 5 [Nm]">
+        <plot flip_y="false" style="Lines" flip_x="false" mode="TimeSeries">
+         <range right="16.138012" top="0.680323" bottom="0.603418" left="11.139000"/>
+         <limitY/>
+         <curve name="/franka_robot_state_broadcaster/measured_joint_states/fer_joint5/effort" color="#3baa32">
+          <transform name="Scale/Offset" alias="joint 5">
+           <options value_offset="0.0" time_offset="0.0" value_scale="1"/>
+          </transform>
+         </curve>
+        </plot>
+       </DockArea>
+       <DockArea name="joint 6 [Nm]">
+        <plot flip_y="false" style="Lines" flip_x="false" mode="TimeSeries">
+         <range right="16.138012" top="2.339283" bottom="2.278721" left="11.139000"/>
+         <limitY/>
+         <curve name="/franka_robot_state_broadcaster/measured_joint_states/fer_joint6/effort" color="#2fbeef">
+          <transform name="Scale/Offset" alias="joint 6">
+           <options value_offset="0.0" time_offset="0.0" value_scale="1"/>
+          </transform>
+         </curve>
+        </plot>
+       </DockArea>
+      </DockSplitter>
+      <DockSplitter count="3" sizes="0.332925;0.334149;0.332925" orientation="-">
+       <DockArea name="joint 7 [Nm]">
+        <plot flip_y="false" style="Lines" flip_x="false" mode="TimeSeries">
+         <range right="16.138012" top="0.124312" bottom="-0.053529" left="11.139000"/>
+         <limitY/>
+         <curve name="/franka_robot_state_broadcaster/measured_joint_states/fer_joint7/effort" color="#d1048b">
+          <transform name="Scale/Offset" alias="joint 7">
+           <options value_offset="0.0" time_offset="0.0" value_scale="1"/>
+          </transform>
+         </curve>
+        </plot>
+       </DockArea>
+       <DockArea name="left finger [Nm]">
+        <plot flip_y="false" style="Lines" flip_x="false" mode="TimeSeries">
+         <range right="16.138012" top="0.100000" bottom="-0.100000" left="11.139000"/>
+         <limitY/>
+         <curve name="/fer_gripper/joint_states/fer_finger_joint1/effort" color="#ffd60a"/>
+        </plot>
+       </DockArea>
+       <DockArea name="right finger [Nm]">
+        <plot flip_y="false" style="Lines" flip_x="false" mode="TimeSeries">
+         <range right="16.138012" top="0.100000" bottom="-0.100000" left="11.139000"/>
+         <limitY/>
+         <curve name="/fer_gripper/joint_states/fer_finger_joint2/effort" color="#6582fd"/>
+        </plot>
+       </DockArea>
+      </DockSplitter>
+     </DockSplitter>
+    </DockSplitter>
+   </Container>
+  </Tab>
+  <Tab tab_name="wrenches" containers="1">
+   <Container>
+    <DockSplitter count="2" sizes="0.5;0.5" orientation="-">
+     <DockArea name="Force [N]">
+      <plot flip_y="false" style="Lines" flip_x="false" mode="TimeSeries">
+       <range right="16.139000" top="0.884998" bottom="-0.099838" left="11.140000"/>
+       <limitY/>
+       <curve name="/franka_robot_state_broadcaster/external_wrench_in_stiffness_frame/wrench/force/x" color="#d62728"/>
+       <curve name="/franka_robot_state_broadcaster/external_wrench_in_stiffness_frame/wrench/force/y" color="#1ac938"/>
+       <curve name="/franka_robot_state_broadcaster/external_wrench_in_stiffness_frame/wrench/force/z" color="#1f77b4"/>
+      </plot>
+     </DockArea>
+     <DockArea name="Torque [Nm]">
+      <plot flip_y="false" style="Lines" flip_x="false" mode="TimeSeries">
+       <range right="16.139000" top="0.098686" bottom="-0.118838" left="11.140000"/>
+       <limitY/>
+       <curve name="/franka_robot_state_broadcaster/external_wrench_in_stiffness_frame/wrench/torque/x" color="#d62728"/>
+       <curve name="/franka_robot_state_broadcaster/external_wrench_in_stiffness_frame/wrench/torque/y" color="#1ac938"/>
+       <curve name="/franka_robot_state_broadcaster/external_wrench_in_stiffness_frame/wrench/torque/z" color="#1f77b4"/>
+      </plot>
+     </DockArea>
+    </DockSplitter>
+   </Container>
+  </Tab>
+  <currentTabIndex index="3"/>
+ </tabbed_widget>
+ <use_relative_time_offset enabled="1"/>
+ <!-- - - - - - - - - - - - - - - -->
+ <!-- - - - - - - - - - - - - - - -->
+ <Plugins>
+  <plugin ID="DataLoad CSV">
+   <parameters delimiter="0" time_axis=""/>
+  </plugin>
+  <plugin ID="DataLoad MCAP"/>
+  <plugin ID="DataLoad ROS2 bags">
+   <use_header_stamp value="false"/>
+   <discard_large_arrays value="true"/>
+   <max_array_size value="100"/>
+   <boolean_strings_to_number value="true"/>
+   <remove_suffix_from_strings value="true"/>
+   <selected_topics value=""/>
+  </plugin>
+  <plugin ID="DataLoad ULog"/>
+  <plugin ID="ROS2 Topic Subscriber">
+   <use_header_stamp value="true"/>
+   <discard_large_arrays value="true"/>
+   <max_array_size value="100"/>
+   <boolean_strings_to_number value="true"/>
+   <remove_suffix_from_strings value="true"/>
+   <selected_topics value="/fer_gripper/joint_states;/franka_robot_state_broadcaster/external_wrench_in_stiffness_frame;/franka_robot_state_broadcaster/measured_joint_states"/>
+  </plugin>
+  <plugin ID="UDP Server"/>
+  <plugin ID="WebSocket Server"/>
+  <plugin ID="ZMQ Subscriber"/>
+  <plugin ID="Fast Fourier Transform"/>
+  <plugin ID="Quaternion to RPY"/>
+  <plugin ID="Reactive Script Editor">
+   <library code="--[[ Helper function to create a series from arrays&#xa;&#xa; new_series: a series previously created with ScatterXY.new(name)&#xa; prefix:     prefix of the timeseries, before the index of the array&#xa; suffix_X:   suffix to complete the name of the series containing the X value. If [nil], use the index of the array.&#xa; suffix_Y:   suffix to complete the name of the series containing the Y value&#xa; timestamp:   usually the tracker_time variable&#xa;              &#xa; Example:&#xa; &#xa; Assuming we have multiple series in the form:&#xa; &#xa;   /trajectory/node.{X}/position/x&#xa;   /trajectory/node.{X}/position/y&#xa;   &#xa; where {N} is the index of the array (integer). We can create a reactive series from the array with:&#xa; &#xa;   new_series = ScatterXY.new(&quot;my_trajectory&quot;) &#xa;   CreateSeriesFromArray( new_series, &quot;/trajectory/node&quot;, &quot;position/x&quot;, &quot;position/y&quot;, tracker_time );&#xa;--]]&#xa;&#xa;function CreateSeriesFromArray( new_series, prefix, suffix_X, suffix_Y, timestamp )&#xa;  &#xa;  --- clear previous values&#xa;  new_series:clear()&#xa;  &#xa;  --- Append points to new_series&#xa;  index = 0&#xa;  while(true) do&#xa;&#xa;    x = index;&#xa;    -- if not nil, get the X coordinate from a series&#xa;    if suffix_X ~= nil then &#xa;      series_x = TimeseriesView.find( string.format( &quot;%s.%d/%s&quot;, prefix, index, suffix_X) )&#xa;      if series_x == nil then break end&#xa;      x = series_x:atTime(timestamp)&#x9; &#xa;    end&#xa;    &#xa;    series_y = TimeseriesView.find( string.format( &quot;%s.%d/%s&quot;, prefix, index, suffix_Y) )&#xa;    if series_y == nil then break end &#xa;    y = series_y:atTime(timestamp)&#xa;    &#xa;    new_series:push_back(x,y)&#xa;    index = index+1&#xa;  end&#xa;end&#xa;&#xa;--[[ Similar to the built-in function GetSeriesNames(), but select only the names with a give prefix. --]]&#xa;&#xa;function GetSeriesNamesByPrefix(prefix)&#xa;  -- GetSeriesNames(9 is a built-in function&#xa;  all_names = GetSeriesNames()&#xa;  filtered_names = {}&#xa;  for i, name in ipairs(all_names)  do&#xa;    -- check the prefix&#xa;    if name:find(prefix, 1, #prefix) then&#xa;      table.insert(filtered_names, name);&#xa;    end&#xa;  end&#xa;  return filtered_names&#xa;end&#xa;&#xa;--[[ Modify an existing series, applying offsets to all their X and Y values&#xa;&#xa; series: an existing timeseries, obtained with TimeseriesView.find(name)&#xa; delta_x: offset to apply to each x value&#xa; delta_y: offset to apply to each y value &#xa;  &#xa;--]]&#xa;&#xa;function ApplyOffsetInPlace(series, delta_x, delta_y)&#xa;  -- use C++ indeces, not Lua indeces&#xa;  for index=0, series:size()-1 do&#xa;    x,y = series:at(index)&#xa;    series:set(index, x + delta_x, y + delta_y)&#xa;  end&#xa;end&#xa;"/>
+   <scripts/>
+  </plugin>
+  <plugin ID="CSV Exporter"/>
+  <plugin ID="ROS2 Topic Re-Publisher"/>
+ </Plugins>
+ <!-- - - - - - - - - - - - - - - -->
+ <previouslyLoaded_Datafiles/>
+ <previouslyLoaded_Streamer name="ROS2 Topic Subscriber"/>
+ <!-- - - - - - - - - - - - - - - -->
+ <customMathEquations/>
+ <snippets/>
+ <!-- - - - - - - - - - - - - - - -->
+</root>

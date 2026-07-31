@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="fer">
+  <!-- Arguments for fer_ros2_control macro -->
+  <xacro:arg name="tf_prefix" default="fer"/>
+  <xacro:arg name="hand" default="true"/>
+  <xacro:arg name="initial_positions_file" default="$(find acg_resources_fer_moveit_config)/config/initial_positions.yaml"/>
+  <xacro:arg name="initial_velocities_file" default="$(find acg_resources_fer_moveit_config)/config/initial_velocities.yaml"/>
+  <xacro:arg name="initial_efforts_file" default="$(find acg_resources_fer_moveit_config)/config/initial_efforts.yaml"/>
+  <xacro:arg name="ros2_controllers_file" default="$(find acg_resources_fer_moveit_config)/config/ros2_controllers.yaml"/>
+  <xacro:arg name="namespace" default="/"/>
+  <xacro:arg name="use_mock_hardware" default="true"/>
+  <xacro:arg name="gazebo" default="false"/>
+  <xacro:arg name="hand" default="false"/>
+  <xacro:arg name="robot_ip" default=""/>
+  <xacro:arg name="async_interface" default="true"/>
+  <xacro:arg name="enable_effort_interfaces" default="false"/>
+
+  <xacro:property name="use_mock_hardware" value="$(arg use_mock_hardware)"/>
+  <xacro:property name="gazebo" value="$(arg gazebo)"/>
+
+  <!-- FER description (inherits `gazebo` flag implicitly) -->
+  <xacro:include filename="$(find franka_description)/robots/fer/fer.urdf.xacro"/>
+
+  <!-- Import FER ros2_control macro -->
+  <xacro:if value="${use_mock_hardware or gazebo}">
+    <xacro:include filename="$(find acg_resources_fer_moveit_config)/config/fer.ros2_control.xacro"/>
+    <xacro:fer_ros2_control
+      name="FER"
+      hand="$(arg hand)"
+      initial_positions_file="$(arg initial_positions_file)"
+      initial_velocities_file="$(arg initial_velocities_file)"
+      initial_efforts_file="$(arg initial_efforts_file)"
+      ros2_controllers_file="$(arg ros2_controllers_file)"
+      namespace="$(arg namespace)"
+      use_mock_hardware="$(arg use_mock_hardware)"
+      enable_effort_interfaces="$(arg enable_effort_interfaces)"
+    />
+  </xacro:if>
+
+  <xacro:unless value="${use_mock_hardware or gazebo}">
+    <xacro:include filename="$(find franka_description)/robots/common/franka_arm.ros2_control.xacro"/>
+    <xacro:franka_arm_ros2_control
+      arm_id="fer"
+      robot_ip="$(arg robot_ip)"
+      use_fake_hardware="false"
+      fake_sensor_commands="false"
+      gazebo="false"
+      hand="$(arg hand)"
+      gazebo_effort="false"
+      arm_prefix="fer"
+      multi_arm="false"
+      async_interface="$(arg async_interface)"
+    />
+  </xacro:unless>
+</robot>
