@@ -15,9 +15,11 @@ To populate the workspace with the package suite and its dependencies, under you
 wget https://anonymous.4open.science/api/repo/libfranka-636F/zip -O libfranka.zip
 wget https://anonymous.4open.science/api/repo/franka_ros2-AF7B/zip -O franka_ros2.zip
 wget https://anonymous.4open.science/api/repo/franka_description-7ECD/zip -O franka_description.zip
+wget https://anonymous.4open.science/api/repo/fer_moveit_config-4EF6/zip -O fer_moveit_config.zip
 unzip libfranka.zip -d libfranka
 unzip franka_ros2.zip -d franka_ros2
 unzip franka_description.zip -d franka_description
+unzip fer_moveit_config.zip -d fer_moveit_config
 cd ..
 cd src/libfranka/
 git clone https://github.com/tingelst/libfranka-common.git common
