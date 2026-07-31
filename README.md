@@ -6,6 +6,10 @@ This repository supports the paper
 
 ## Getting Started
 
+### Dependencies
+
+#### Source dependencies
+
 Let's start by creating and populating the colcon workspace with the `fer_moveit_config` package suite and its dependencies.
 For the time being, you will need to download the repositories manually to ensure the authors' anonymity.
 
@@ -26,11 +30,25 @@ git clone https://github.com/tingelst/libfranka-common.git common
 cd -
 ```
 
-Then, you can safely build everything with colcon: move to your workspace's root folder and run:
+#### System dependencies
+
+Run
+
+```bash
+rosdep install --from-paths src -i
+```
+
+to install all system dependencies.
+
+### Build
+
+When all dependencies are installed, you can safely build everything with colcon: move to your workspace's root folder and run:
 
 ```bash
 colcon build --packages-up-to fer_moveit_config --cmake-args -DCMAKE_BUILD_TYPE=Release
 ```
+
+### Demos
 
 Please refer to the [package's readme](./fer_moveit_config/README.md) for instructions on how to execute demos.
 
