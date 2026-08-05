@@ -2,7 +2,7 @@
 
 This repository supports the paper
 
-> "Keeping the Franka Emika Panda alive: a ROS~2 stack\\with a reliable position interface", Submitted to ICINCO 2026
+> "Keeping the Franka Emika Panda alive: a ROS 2 stack with a reliable position interface", Submitted to ICINCO 2026
 
 ## Getting Started
 
