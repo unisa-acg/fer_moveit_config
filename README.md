@@ -64,4 +64,4 @@ Please see our [contribution guidelines](./CONTRIBUTING.md).
 
 Please refer to [this guide](./REALTIME.md) for useful links and information about installing a real-time kernel.
 
-&copy; *2026 Automatic Control Group (UNISA)*
+&copy; *2026 XXX (YYY)*
