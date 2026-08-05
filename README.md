@@ -28,6 +28,10 @@ cd ..
 cd src/libfranka/
 git clone https://github.com/tingelst/libfranka-common.git common
 cd -
+rm src/libfranka.zip
+rm src/franka_ros2.zip
+rm src/franka_description.zip
+rm src/fer_moveit_config.zip
 ```
 
 #### System dependencies
