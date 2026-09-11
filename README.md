@@ -1,8 +1,10 @@
 # FER MoveIt! config in ROS2
 
+[Code](https://github.com/unisa-acg/fer_moveit_config) | [Website](https://sites.google.com/unisa.it/fer-ros2/home) | [Videos](https://sites.google.com/unisa.it/fer-ros2/applications)
+
 This repository supports the paper
 
-> "Keeping the Franka Emika Panda alive: a ROS 2 stack with a reliable position interface", Submitted to ICINCO 2026
+> A. Langella, D. Risi, V. Petrone, E. Ferrentino, P. Chiacchio, "Keeping the Franka Emika Panda alive: a ROS 2 stack with a reliable position interface", 23rd International Conference on Informatics, Automation and Robotics (ICINCO), 2026, Accepted for publication, DOI: [10.48550/arXiv.2608.19740](https://doi.org/10.48550/arXiv.2608.19740)
 
 ## Getting Started
 
