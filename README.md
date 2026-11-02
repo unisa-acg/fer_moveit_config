@@ -4,7 +4,7 @@
 
 This repository supports the paper
 
-> A. Langella, D. Risi, V. Petrone, E. Ferrentino, P. Chiacchio, "Keeping the Franka Emika Panda alive: a ROS 2 stack with a reliable position interface", 23rd International Conference on Informatics, Automation and Robotics (ICINCO), 2026, Accepted for publication, DOI: [10.48550/arXiv.2608.19740](https://doi.org/10.48550/arXiv.2608.19740)
+> Langella, A., Risi, D., Petrone, V., Ferrentino, E. and Chiacchio, P. (2026). Keeping the Franka Emika Panda Alive: A ROS 2 Stack with a Reliable Position Interface. In Proceedings of the 23rd International Conference on Informatics in Control, Automation and Robotics - Volume 1: COBOTA; ISBN 978-989-758-870-9; ISSN 2184-2809, SciTePress, pages 918-929. DOI: https://doi.org/10.5220/0015508000004979
 
 ## Getting Started
 
