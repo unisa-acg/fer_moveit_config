@@ -1,6 +1,6 @@
 # FER MoveIt! config in ROS2
 
-[Code](https://github.com/unisa-acg/fer_moveit_config) | [Website](https://sites.google.com/unisa.it/fer-ros2/home) | [Videos](https://sites.google.com/unisa.it/fer-ros2/applications)
+[Code](https://github.com/unisa-acg/fer_moveit_config) | [Website](https://sites.google.com/unisa.it/fer-ros2/home) | [Videos](https://www.youtube.com/playlist?list=PLM9NQlZxANBk)
 
 This repository supports the paper
 
